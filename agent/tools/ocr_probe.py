@@ -24,6 +24,7 @@ PREPARED_MARKERS = {
     "duplicates": [("WXDUP20261004", "LEFT", 2)],
     "sequence": [("WXSEQ20261004" + suffix, "LEFT", 1) for suffix in "ABC"],
     "sequence-dup": [("WXDUP20261004" + suffix, "LEFT", 1) for suffix in "ABC"],
+    "pipeline": [("WXPIPE20261004A", "LEFT", 1)],
 }
 
 

@@ -29,6 +29,7 @@ class BootstrapHttpTest {
         assertEquals(200, health.statusCode());
         assertTrue(health.body().contains("\"status\":\"UP\""));
         assertEquals(404, get(client, "/actuator/env").statusCode());
+        assertEquals(404, get(client, "/api/v1/dev/probe-messages").statusCode());
     }
 
     private HttpResponse<String> get(HttpClient client, String path) throws Exception {

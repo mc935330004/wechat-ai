@@ -26,6 +26,8 @@ def read_once(args):
         command = [sys.executable, "-X", "utf8", str(Path(__file__).with_name("ocr_probe.py")),
                    "--read-only", "--expected-chat", args.expected_chat,
                    "--layout", str(args.layout.resolve()), "--output", str(output_path)]
+        if getattr(args, "message_check", None):
+            command += ["--message-check", args.message_check]
         child = subprocess.Popen(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
                                  creationflags=subprocess.CREATE_NEW_PROCESS_GROUP if sys.platform == "win32" else 0)
         try:

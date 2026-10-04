@@ -32,3 +32,8 @@ logging:
   level:
     root: INFO
     com.wechat.ai: INFO
+
+wechat:
+  probe:
+    enabled: ${WECHAT_PROBE_ENABLED:false}
+    token: ${WECHAT_PROBE_TOKEN:}
