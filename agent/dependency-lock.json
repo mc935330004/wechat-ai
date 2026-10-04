@@ -1,0 +1,292 @@
+{
+  "python": "3.14.8",
+  "platform": "Windows x64",
+  "distribution": "pywechat127",
+  "version": "1.9.8",
+  "upstream_commit_reviewed": "8589baa049bb91d3a500602c167f07b2f8397a13",
+  "wheel_sha256": "fcc3879a364c33ea4858ae28b4d7602677f0633979197963499d78ff1821313e",
+  "source_note": "PyPI wheel is locked by hash; GitHub commit is the reviewed upstream reference, not an asserted wheel build commit.",
+  "license": "LGPL-2.1 upstream; PyPI metadata declares LGPL",
+  "packages": [
+    {
+      "name": "antlr4-python3-runtime",
+      "version": "4.9.3",
+      "source": "https://files.pythonhosted.org/packages/3e/38/7859ff46355f76f8d19459005ca000b6e7012f2f1ca597746cbcd1fbfe5e/antlr4-python3-runtime-4.9.3.tar.gz",
+      "sha256": "f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "source": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "source": "https://files.pythonhosted.org/packages/a7/06/1c3e01e3ba14c39f6d10bfbac52753b7e22259e38088e5cfe1d704918690/cffi-2.1.1-cp314-cp314-win_amd64.whl",
+      "sha256": "3222ba5d678f80a030e6afbcc33dc1ae5cb45facabb61cee2c7016b8432fde48"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "source": "https://files.pythonhosted.org/packages/d1/78/5ed86f743d4bc350db307e7636419a0a5ee1d91806d30c7f667bd5c80dae/charset_normalizer-3.5.2-cp314-cp314-win_amd64.whl",
+      "sha256": "e4e81e09c1578b8df602e3db08b0b3ea0a6947ad612f52bf8dc5ea8d47691f0c"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "source": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+      "name": "colorlog",
+      "version": "6.12.0",
+      "source": "https://files.pythonhosted.org/packages/d4/19/0b6647bf5e331521e55d2b63bfbdc210bd9cd605189273f03614a05f702d/colorlog-6.12.0-py3-none-any.whl",
+      "sha256": "30d392604e9110045a2c2aeefc27d7a017abbab63f3a8aee594eac0801df784e"
+    },
+    {
+      "name": "comtypes",
+      "version": "1.4.17",
+      "source": "https://files.pythonhosted.org/packages/89/9c/d0bc1fb69ad22a04bdc01dd9b5613a2ebc4d02ba1ec24b02127dc93791ba/comtypes-1.4.17-py3-none-any.whl",
+      "sha256": "4e0a221dde2c589b82977bed802efd71cd5eb67a380347b732e02735e597f586"
+    },
+    {
+      "name": "emoji",
+      "version": "2.16.0",
+      "source": "https://files.pythonhosted.org/packages/fd/8a/75e3177f374877b19dd3112820b071836ad1100f9f58424630b4783519bc/emoji-2.16.0-py3-none-any.whl",
+      "sha256": "c4230d80640def9071599ff56b1b5950fe13a2a94c0da98c5deab12431b24330"
+    },
+    {
+      "name": "flatbuffers",
+      "version": "25.12.19",
+      "source": "https://files.pythonhosted.org/packages/e8/2d/d2a548598be01649e2d46231d151a6c56d10b964d94043a335ae56ea2d92/flatbuffers-25.12.19-py2.py3-none-any.whl",
+      "sha256": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4"
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "source": "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl",
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c"
+    },
+    {
+      "name": "MouseInfo",
+      "version": "0.1.3",
+      "source": "https://files.pythonhosted.org/packages/28/fa/b2ba8229b9381e8f6381c1dcae6f4159a7f72349e414ed19cfbbd1817173/MouseInfo-0.1.3.tar.gz",
+      "sha256": "2c62fb8885062b8e520a3cce0a297c657adcc08c60952eb05bc8256ef6f7f6e7"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.3",
+      "source": "https://files.pythonhosted.org/packages/a4/73/d2c08231e4fde7e415501fd02c715d96e98599b2d8384445933944152984/numpy-2.5.3-cp314-cp314-win_amd64.whl",
+      "sha256": "2c25dfa72943e4336ddb6b0ee4277b47a0c85bede0807530ec68103bf58e2c10"
+    },
+    {
+      "name": "omegaconf",
+      "version": "2.3.1",
+      "source": "https://files.pythonhosted.org/packages/a4/0e/152509871bf30df6fc38569f52a2db9b55dd41aae957adae50a053ac7778/omegaconf-2.3.1-py3-none-any.whl",
+      "sha256": "3d701d14e9a8828f1edd28bb70b725908b34277cdd72cf7d6a83f94dadc6b6a0"
+    },
+    {
+      "name": "onnxruntime",
+      "version": "1.30.0",
+      "source": "https://files.pythonhosted.org/packages/4d/0a/748b86000fbf9518b5dfc5bdc1b924eeaca976203740fd9d30649e568ee6/onnxruntime-1.30.0-cp314-cp314-win_amd64.whl",
+      "sha256": "3bdd1752a8502ac1a7ccc6e878d16db6943df574d54ed7f01058a6806ae05be4"
+    },
+    {
+      "name": "opencv-python",
+      "version": "5.0.0.93",
+      "source": "https://files.pythonhosted.org/packages/21/f0/9fa6e85cb10c8eb36a0222d27e50fe381b86ce49a55446bf39f491727564/opencv_python-5.0.0.93-cp37-abi3-win_amd64.whl",
+      "sha256": "f90ba04b8f73bc5c3814037699739f0156f597338a98f05956c684e7c3ca10d2"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "source": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "source": "https://files.pythonhosted.org/packages/f1/e0/492879f69d94f91f60fc8cd05ba03650e9520afebb2fb7aa12777d7c7f38/pillow-12.3.0-cp314-cp314-win_amd64.whl",
+      "sha256": "fdafc9cce40277e0f7a0feabce0ee50dd2fa1800f3b38015e51296b5e814048d"
+    },
+    {
+      "name": "protobuf",
+      "version": "7.36.2",
+      "source": "https://files.pythonhosted.org/packages/8a/55/b77bda4e5e5f5971fb51b07663694690e9afdb9402136c16a522bd621cad/protobuf-7.36.2-cp310-abi3-win_amd64.whl",
+      "sha256": "a300819d441e078a5608c0d3c709796bb548136058fda017ae51d425b44fd353"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "source": "https://files.pythonhosted.org/packages/b4/90/e2159492b5426be0c1fef7acba807a03511f97c5f86b3caeda6ad92351a7/psutil-7.2.2-cp37-abi3-win_amd64.whl",
+      "sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988"
+    },
+    {
+      "name": "PyAutoGUI",
+      "version": "0.9.54",
+      "source": "https://files.pythonhosted.org/packages/65/ff/cdae0a8c2118a0de74b6cf4cbcdcaf8fd25857e6c3f205ce4b1794b27814/PyAutoGUI-0.9.54.tar.gz",
+      "sha256": "dd1d29e8fd118941cb193f74df57e5c6ff8e9253b99c7b04f39cfc69f3ae04b2"
+    },
+    {
+      "name": "pycaw",
+      "version": "20260927",
+      "source": "https://files.pythonhosted.org/packages/af/79/baf93a0a0b53a886f6a84ac05dd8491068c8a7c54db4ccd247acdcff9d1c/pycaw-20260927-py3-none-any.whl",
+      "sha256": "d5b162a87536956af8dfa0fc53b1c77870a30706445ffd7f92a2ed184f65ddf4"
+    },
+    {
+      "name": "pyclipper",
+      "version": "1.4.0",
+      "source": "https://files.pythonhosted.org/packages/e3/d7/7f4354e69f10a917e5c7d5d72a499ef2e10945312f5e72c414a0a08d2ae4/pyclipper-1.4.0-cp314-cp314-win_amd64.whl",
+      "sha256": "6c317e182590c88ec0194149995e3d71a979cfef3b246383f4e035f9d4a11826"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.0",
+      "source": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+      "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992"
+    },
+    {
+      "name": "PyGetWindow",
+      "version": "0.0.9",
+      "source": "https://files.pythonhosted.org/packages/e1/70/c7a4f46dbf06048c6d57d9489b8e0f9c4c3d36b7479f03c5ca97eaa2541d/PyGetWindow-0.0.9.tar.gz",
+      "sha256": "17894355e7d2b305cd832d717708384017c1698a90ce24f6f7fbf0242dd0a688"
+    },
+    {
+      "name": "PyMsgBox",
+      "version": "2.0.1",
+      "source": "https://files.pythonhosted.org/packages/6f/3e/08c8cac81b2b2f7502746e6b9c8e5b0ec6432cd882c605560fc409aaf087/pymsgbox-2.0.1-py3-none-any.whl",
+      "sha256": "5de8ec19bca2ca7e6c09d39c817c83f17c75cee80275235f43a9931db699f73b"
+    },
+    {
+      "name": "pyperclip",
+      "version": "1.11.0",
+      "source": "https://files.pythonhosted.org/packages/df/80/fc9d01d5ed37ba4c42ca2b55b4339ae6e200b456be3a1aaddf4a9fa99b8c/pyperclip-1.11.0-py3-none-any.whl",
+      "sha256": "299403e9ff44581cb9ba2ffeed69c7aa96a008622ad0c46cb575ca75b5b84273"
+    },
+    {
+      "name": "PyRect",
+      "version": "0.2.0",
+      "source": "https://files.pythonhosted.org/packages/cb/04/2ba023d5f771b645f7be0c281cdacdcd939fe13d1deb331fc5ed1a6b3a98/PyRect-0.2.0.tar.gz",
+      "sha256": "f65155f6df9b929b67caffbd57c0947c5ae5449d3b580d178074bffb47a09b78"
+    },
+    {
+      "name": "PyScreeze",
+      "version": "1.0.1",
+      "source": "https://files.pythonhosted.org/packages/ee/f0/cb456ac4f1a73723d5b866933b7986f02bacea27516629c00f8e7da94c2d/pyscreeze-1.0.1.tar.gz",
+      "sha256": "cf1662710f1b46aa5ff229ee23f367da9e20af4a78e6e365bee973cad0ead4be"
+    },
+    {
+      "name": "pytweening",
+      "version": "1.2.0",
+      "source": "https://files.pythonhosted.org/packages/79/0c/c16bc93ac2755bac0066a8ecbd2a2931a1735a6fffd99a2b9681c7e83e90/pytweening-1.2.0.tar.gz",
+      "sha256": "243318b7736698066c5f362ec5c2b6434ecf4297c3c8e7caa8abfe6af4cac71b"
+    },
+    {
+      "name": "pywechat127",
+      "version": "1.9.8",
+      "source": "https://files.pythonhosted.org/packages/04/f7/677c2477b417d837507ce6dc95545dff0a21679326929051e0b2bfeb1ad7/pywechat127-1.9.8-py3-none-any.whl",
+      "sha256": "fcc3879a364c33ea4858ae28b4d7602677f0633979197963499d78ff1821313e"
+    },
+    {
+      "name": "pywin32",
+      "version": "312",
+      "source": "https://files.pythonhosted.org/packages/21/82/3bf86d2e2808902013132e1ce905a7da0da53790f3836c64bf44d55e24f3/pywin32-312-cp314-cp314-win_amd64.whl",
+      "sha256": "a4dd3a848290ef724347b19f301045831d8e802fa4464f491b98b1e0a081432e"
+    },
+    {
+      "name": "pywin32-ctypes",
+      "version": "0.2.3",
+      "source": "https://files.pythonhosted.org/packages/de/3d/8161f7711c017e01ac9f008dfddd9410dff3674334c233bde66e7ba65bbf/pywin32_ctypes-0.2.3-py3-none-any.whl",
+      "sha256": "8a1513379d709975552d202d942d9837758905c8d01eb82b8bcc30918929e7b8"
+    },
+    {
+      "name": "pywinauto",
+      "version": "0.6.9",
+      "source": "https://files.pythonhosted.org/packages/44/46/f2283648e0c237af451dc50ebc42121abfd198d12391fd9ad4df1c6b97d2/pywinauto-0.6.9-py2.py3-none-any.whl",
+      "sha256": "5924b3072864a1d730c5546bbeb17cf4063ba518b618dbc5e43c18276c7c9356"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "source": "https://files.pythonhosted.org/packages/23/20/bb6982b26a40bb43951265ba29d4c246ef0ff59c9fdcdf0ed04e0687de4d/pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+      "sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac"
+    },
+    {
+      "name": "rapidocr",
+      "version": "3.9.2",
+      "source": "https://files.pythonhosted.org/packages/55/ed/0ee9b9281986974be9d2406ae0134c8d7c91d2fc613f16ffda9701eeda6f/rapidocr-3.9.2-py3-none-any.whl",
+      "sha256": "04d6b8d151f823d930bd91910555f57bea897c0c44fa6794267b94cf9c1ef9a0"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "source": "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl",
+      "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0"
+    },
+    {
+      "name": "shapely",
+      "version": "2.1.2",
+      "source": "https://files.pythonhosted.org/packages/74/d4/135684f342e909330e50d31d441ace06bf83c7dc0777e11043f99167b123/shapely-2.1.2-cp314-cp314-win_amd64.whl",
+      "sha256": "a444e7afccdb0999e203b976adb37ea633725333e5b119ad40b1ca291ecf311c"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "source": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+    },
+    {
+      "name": "sounddevice",
+      "version": "0.5.6",
+      "source": "https://files.pythonhosted.org/packages/8d/3e/cbc593c31a5f0d817b3fe97e64aa8461bd0f55cb07b67ce1b776296ae336/sounddevice-0.5.6-py3-none-win_amd64.whl",
+      "sha256": "7f4162f514f007b0bf25a3ccfed3f1705bc2ec311888a90232729eec4f57a4f4"
+    },
+    {
+      "name": "soundfile",
+      "version": "0.14.0",
+      "source": "https://files.pythonhosted.org/packages/ed/97/b39c18ac1df45e755ca22b8b00e872929da5d107998a207a5e4ac831bfda/soundfile-0.14.0-py2.py3-none-win_amd64.whl",
+      "sha256": "299491d3499460fb1b74bb4bd78b57ffc2d243a5fafa7b6ec1b264875c78453e"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1",
+      "source": "https://files.pythonhosted.org/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl",
+      "sha256": "c293e525e6fef9c20e8728fd4612df02a0aa31bb5fe91ecd93e123b1b7bffa73"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "source": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "source": "https://files.pythonhosted.org/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl",
+      "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3"
+    }
+  ],
+  "ocr_engine": {
+    "name": "rapidocr",
+    "version": "3.9.2",
+    "onnxruntime": "1.30.0",
+    "license": "Apache-2.0",
+    "source": "https://github.com/RapidAI/RapidOCR",
+    "inference": "local CPU, explicit packaged model paths",
+    "models": [
+      {
+        "name": "ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+        "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      {
+        "name": "PP-OCRv6_det_small.onnx",
+        "sha256": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f"
+      },
+      {
+        "name": "PP-OCRv6_rec_small.onnx",
+        "sha256": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+      }
+    ]
+  }
+}

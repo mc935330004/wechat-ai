@@ -1,0 +1,37 @@
+openapi: 3.1.0
+info:
+  title: wechat-ai bootstrap API
+  version: 0.0.1
+servers:
+  - url: http://127.0.0.1:8080
+paths:
+  /api/v1/admin/status:
+    get:
+      operationId: getBootstrapStatus
+      summary: Local read-only bootstrap status; formal admin authentication is added in Phase 1.
+      responses:
+        '200':
+          description: Backend is running in OFF mode.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BootstrapStatus'
+components:
+  schemas:
+    BootstrapStatus:
+      type: object
+      additionalProperties: false
+      required: [appName, status, effectiveMode, schemaVersion]
+      properties:
+        appName:
+          type: string
+          const: wechat-ai
+        status:
+          type: string
+          const: UP
+        effectiveMode:
+          type: string
+          const: OFF
+        schemaVersion:
+          type: integer
+          const: 1

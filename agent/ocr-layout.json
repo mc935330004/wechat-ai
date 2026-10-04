@@ -1,0 +1,12 @@
+{
+  "calibrated_wechat_version": "4.1.15.13",
+  "client_size": [1100, 800],
+  "dpi": 120,
+  "header_box": [375, 41, 720, 62],
+  "message_box": [375, 103, 720, 509],
+  "input_box": [386, 622, 704, 126],
+  "scale": 2,
+  "threshold": 130,
+  "language": "zh-Hans-CN",
+  "note": "Phase 0 read-only calibration. Regions are not click coordinates. Recalibrate after resizing, DPI or client-version changes. OCR cannot prove the complete input is empty."
+}

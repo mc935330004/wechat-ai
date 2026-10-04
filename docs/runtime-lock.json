@@ -1,0 +1,6 @@
+{
+  "name": "Oracle JDK",
+  "version": "17.0.10+11-LTS-240",
+  "source": "existing local installation",
+  "install": "D:/java/jdk-17"
+}

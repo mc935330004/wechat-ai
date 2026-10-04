@@ -1,0 +1,16 @@
+target/
+.tools/
+runtime/
+.idea/
+*.iml
+.env
+.env.*
+!.env.example
+agent/.venv/
+agent/runtime/
+agent/__pycache__/
+agent/**/*.pyc
+*.log
+*.db
+*.db-wal
+*.db-shm
