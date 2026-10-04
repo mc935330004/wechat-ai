@@ -83,6 +83,7 @@ public class ProbeMessageController {
         return ResponseEntity.badRequest().body(Map.of("error", "INVALID_TEST_PAYLOAD"));
     }
 
+
     public record ProbeMessage(@NotNull UUID eventId, @NotNull UUID agentRunId,
                                @NotNull Instant observedAt,
                                @NotNull @Pattern(regexp = "WXPIPE20261004A") String text,
