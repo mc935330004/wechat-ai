@@ -12,12 +12,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\dev.ps1
 
 脚本使用本机 `D:\java\jdk-17` 的 JDK 17，执行后恢复当前进程环境；不修改机器或用户级 Java 环境变量。其他机器可通过 `-JavaHome '你的JDK17目录'` 指定路径。IDEA Project SDK、Maven Importer 和 Maven Runner JRE 均使用 JDK 17；修改后重新加载 Maven 项目。
 
-默认地址 `http://127.0.0.1:8080`：
+当前开发配置地址 `http://127.0.0.1:8996`：
 
 - `GET /api/v1/admin/status`：最小只读状态，模式固定 OFF。
 - `GET /actuator/health`：健康检查。未开放环境、配置等敏感 Actuator 端点。
 
 默认只绑定本机，无数据库、无模型调用、无微信读写。正式鉴权和业务能力按后续阶段加入；不要直接改成公网绑定。
+
+微信收到新消息并上传后台的**固定文案联调**见 `docs/acceptance/message-pipeline-test.md`。临时测试实例使用 8997，只有显式开启 dev probe 并提供本地令牌才开放接收接口；默认启动仍 OFF。此原型只验证当前人工打开的测试私聊中新收到的 `WXPIPE20261004A`，不代表多会话正式监听。
 
 ## 构建与验证
 

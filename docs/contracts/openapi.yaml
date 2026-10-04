@@ -1,9 +1,12 @@
 openapi: 3.1.0
 info:
-  title: wechat-ai bootstrap API
-  version: 0.0.1
+  title: wechat-ai local development API
+  version: 0.0.2
 servers:
-  - url: http://127.0.0.1:8080
+  - url: http://127.0.0.1:8996
+    description: Current development configuration; probe paths absent unless explicitly enabled.
+  - url: http://127.0.0.1:8997
+    description: Optional isolated canary test instance.
 paths:
   /api/v1/admin/status:
     get:
@@ -16,8 +19,98 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/BootstrapStatus'
+  /api/v1/dev/probe-messages:
+    post:
+      operationId: receiveControlledProbeMessage
+      summary: Opt-in dev-only local canary receipt. Not the production Agent gateway.
+      security:
+        - ProbeToken: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProbeMessage'
+      responses:
+        '200':
+          description: Accepted or same-content duplicate event ID; no AI or WeChat writes.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProbeReceipt'
+        '400':
+          description: Invalid canary payload.
+        '401':
+          description: Invalid token or non-loopback request.
+        '404':
+          description: Dev probe disabled or profile is not dev.
+        '409':
+          description: Existing event ID with different content.
+        '429':
+          description: In-memory test receipt capacity reached; restart test instance.
+    get:
+      operationId: listControlledProbeReceipts
+      summary: In-memory controlled test receipts, lost on backend restart.
+      security:
+        - ProbeToken: []
+      responses:
+        '200':
+          description: At most 64 controlled canary receipts.
+          content:
+            application/json:
+              schema:
+                type: array
+                maxItems: 64
+                items:
+                  $ref: '#/components/schemas/ProbeReceipt'
+        '401':
+          description: Invalid token or non-loopback request.
+        '404':
+          description: Probe disabled.
 components:
+  securitySchemes:
+    ProbeToken:
+      type: apiKey
+      in: header
+      name: X-Probe-Token
   schemas:
+    ProbeMessage:
+      type: object
+      required: [eventId, agentRunId, observedAt, text, direction, evidenceSource]
+      properties:
+        eventId:
+          type: string
+          format: uuid
+        agentRunId:
+          type: string
+          format: uuid
+        observedAt:
+          type: string
+          format: date-time
+        text:
+          type: string
+          const: WXPIPE20261004A
+        direction:
+          type: string
+          const: IN
+        evidenceSource:
+          type: string
+          enum: [REAL_DESKTOP_OCR, SYNTHETIC]
+    ProbeReceipt:
+      type: object
+      required: [message, receivedAt, status, effectiveMode]
+      properties:
+        message:
+          $ref: '#/components/schemas/ProbeMessage'
+        receivedAt:
+          type: string
+          format: date-time
+        status:
+          type: string
+          const: ACCEPTED
+        effectiveMode:
+          type: string
+          const: OFF
     BootstrapStatus:
       type: object
       additionalProperties: false

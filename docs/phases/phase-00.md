@@ -17,6 +17,7 @@
 - 完成 agent/tools/ocr_probe.py、原生 OCR 对比入口、区域校准及 OCR 边界测试；本地 RapidOCR 两帧标题/已知输入标记精确匹配、快照一致性通过。RPA + OCR 当前 43 项依赖及 3 个模型哈希已锁定；详细证据见 docs/acceptance/ocr-readonly-report.md。
 - 补充 OCR 人工测试标记的方向、同文重复、连续三条可见顺序验证入口；相关模拟边界检查与现有测试共 3 项通过。第一私聊已知短文字收发位置、同文两条保留、实际 A/B/C 可见顺序均有限验证通过，各检查两帧一致，失败证据保留。第二私聊待验。见 docs/acceptance/ocr-message-validation.md；未据此实现正式去重或聚合。
 - 后端状态/健康接口、前端代理和连接检查页，有效模式固定 OFF。
+- 按用户提出的“检测桌面收到的信息并传到后台”联调需求，新增显式开启、令牌保护、仅固定公开文案的 dev 接收入口和 receive_test.py；先建立无标记基线再检测新左侧标记。Java 2 项 HTTP、Python 5 项模拟检查通过，真实桌面基线通过后等待 300 秒未收到标记并停止，上报尚未通过，见 docs/acceptance/message-pipeline-test.md。此项不等于正式 Phase 2 监听/消息去重。
 - 完成 agent/tools/observe.py 低频只读观察入口，与已有测试共 4 项模拟边界检查通过。恢复窗口后真实 30 秒短测有限通过，2 轮 4 帧、跨度 30.001 秒、总耗时 43.247 秒；首次最小化失败保留，4 小时仍未执行，见 docs/acceptance/read-only-observation.md。
 - 后端打包/真实 HTTP 测试、前端类型检查/构建/接口校验测试、浏览器成功/异常/重连与窄屏检查通过。
 - 完整需求已保存为后端 requirements.md；接口真值在 docs/contracts/openapi.yaml，前端记录版本/hash。
