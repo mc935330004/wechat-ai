@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: wechat-ai
+  profiles:
+    default: dev
+  ai:
+    model:
+      chat: none
+      embedding: none
+      image: none
+      audio:
+        transcription: none
+        speech: none
+      moderation: none
+  flyway:
+    locations: classpath:db/migration
+    clean-disabled: true
+    baseline-on-migrate: false
+  web:
+    error:
+      include-message: never
+      include-stacktrace: never
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+
